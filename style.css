@@ -1,0 +1,89 @@
+
+body {
+    background-color: black;
+}
+/*Smoke*/
+.airflow {
+    position: absolute;
+    width: 900px;
+    height: 150px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.theCard {
+    position: relative;
+    width: 1800px;
+    height: 100%;
+    /* background-image: url(images/ghost2.png); */
+    background-repeat: repeat-x;
+    -webkit-animation: header_Roll linear 20s infinite;
+}
+
+.card-one {
+    position: absolute;
+    width: 1800px;
+    height: 151px;
+    backface-visibility: visible;
+    background-image: url(images/breeze2.png);
+    background-repeat: repeat-x;
+    transform: rotateX(180deg);
+}
+
+.card-two {
+    position: absolute;
+    width: 1800px;
+    height: 151px;
+    left: 80px;
+    backface-visibility: visible;
+    background-image: url(images/breeze2.png);
+    background-repeat: repeat-x;
+    transform: rotateX(110deg);
+}
+
+.card-three {
+    position: absolute;
+    width: 1800px;
+    height: 151px;
+    left: 40px;
+    backface-visibility: visible;
+    background-image: url(images/breeze2.png);
+    background-repeat: repeat-x;
+    transform: rotateX(110deg);
+}
+
+/*Translate*/
+@-webkit-keyframes header_Roll {
+    from { right: 0px; }
+    to { right: 900px; }
+}
+/*rotate*/
+    .card-one {
+        -webkit-animation: rotation 10s infinite linear;
+    }
+    @-webkit-keyframes rotation {
+        from {-webkit-transform: rotateX(179deg); 
+        }
+        to {-webkit-transform: rotateX(180deg);
+        }
+    } 
+    /**/
+        .card-two {
+            -webkit-animation: rotation 9.6s infinite linear;
+        }
+        @-webkit-keyframes rotation {
+            from {-webkit-transform: rotateX(0deg);
+            }
+            to {-webkit-transform: rotateX(359deg);
+            }
+        } 
+    /**/
+            .card-three {
+                -webkit-animation: rotation 11.4s infinite linear;
+            }
+            @-webkit-keyframes rotation {
+                from {-webkit-transform: rotateX(0deg);
+                }
+                to {-webkit-transform: rotateX(359deg);
+                }
+            } 
