@@ -8,7 +8,8 @@ body {
     width: 900px;
     height: 150px;
     margin: 0px auto;
-    overflow: hidden;
+    overflow: visible;
+    background-color: cornflowerblue;
 }
 
 .theCard {
@@ -18,9 +19,12 @@ body {
     /* background-image: url(images/ghost2.png); */
     background-repeat: repeat-x;
     -webkit-animation: header_Roll linear 20s infinite;
+    
 }
 
-.card-one {
+
+
+/* .card-one {
     position: absolute;
     width: 1800px;
     height: 151px;
@@ -28,28 +32,45 @@ body {
     background-image: url(images/breeze2.png);
     background-repeat: repeat-x;
     transform: rotateX(180deg);
-}
+} */
 
 .card-two {
     position: absolute;
     width: 1800px;
     height: 151px;
-    left: 80px;
     backface-visibility: visible;
     background-image: url(images/breeze2.png);
     background-repeat: repeat-x;
     transform: rotateX(110deg);
 }
 
-.card-three {
+/* .card-three {
     position: absolute;
     width: 1800px;
     height: 151px;
-    left: 40px;
     backface-visibility: visible;
     background-image: url(images/breeze2.png);
     background-repeat: repeat-x;
     transform: rotateX(110deg);
+} */
+
+.cardsleve-2 {
+    position: absolute;
+    width: 1800px;
+    height: 100%;
+    transition: scale 10;
+    
+    
+}
+
+.cardsleve-3 {
+    position: absolute;
+    width: 1800px;
+    height: 100%;
+    transform: scale(1.5);
+    
+    
+    
 }
 
 /*Translate*/
@@ -59,7 +80,7 @@ body {
 }
 /*rotate*/
     .card-one {
-        -webkit-animation: rotation 10s infinite linear;
+        -webkit-animation: rotation 14s infinite linear;
     }
     @-webkit-keyframes rotation {
         from {-webkit-transform: rotateX(179deg); 
@@ -69,7 +90,7 @@ body {
     } 
     /**/
         .card-two {
-            -webkit-animation: rotation 9.6s infinite linear;
+            -webkit-animation: rotation 13.6s infinite linear;
         }
         @-webkit-keyframes rotation {
             from {-webkit-transform: rotateX(0deg);
@@ -79,7 +100,7 @@ body {
         } 
     /**/
             .card-three {
-                -webkit-animation: rotation 11.4s infinite linear;
+                -webkit-animation: rotation 15.4s infinite linear;
             }
             @-webkit-keyframes rotation {
                 from {-webkit-transform: rotateX(0deg);
