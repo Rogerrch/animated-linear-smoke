@@ -8,7 +8,7 @@ body {
     width: 900px;
     height: 150px;
     margin: 0px auto;
-    overflow: visible;
+    overflow: hidden;
     background-color: cornflowerblue;
 }
 
@@ -23,8 +23,8 @@ body {
 }
 
 
-
-/* .card-one {
+/* 
+.card-one {
     position: absolute;
     width: 1800px;
     height: 151px;
@@ -40,8 +40,11 @@ body {
     height: 151px;
     backface-visibility: visible;
     background-image: url(images/breeze2.png);
+    background-size: 930px 200px;
     background-repeat: repeat-x;
+    transition: ease-in-out;
     transform: rotateX(110deg);
+    
 }
 
 /* .card-three {
@@ -50,28 +53,11 @@ body {
     height: 151px;
     backface-visibility: visible;
     background-image: url(images/breeze2.png);
+    background-size: 960px 100px;
     background-repeat: repeat-x;
     transform: rotateX(110deg);
 } */
 
-.cardsleve-2 {
-    position: absolute;
-    width: 1800px;
-    height: 100%;
-    transition: scale 10;
-    
-    
-}
-
-.cardsleve-3 {
-    position: absolute;
-    width: 1800px;
-    height: 100%;
-    transform: scale(1.5);
-    
-    
-    
-}
 
 /*Translate*/
 @-webkit-keyframes header_Roll {
