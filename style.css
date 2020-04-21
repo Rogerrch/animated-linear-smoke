@@ -2,14 +2,14 @@
 body {
     background-color: black;
 }
-/*Smoke*/
+/*linear-Smoke*/
 .airflow {
     position: absolute;
     width: 900px;
     height: 150px;
     margin: 0px auto;
     overflow: hidden;
-    background-color: cornflowerblue;
+    background-color: rgb(103, 62, 150);
 }
 
 .theCard {
@@ -18,12 +18,10 @@ body {
     height: 100%;
     /* background-image: url(images/ghost2.png); */
     background-repeat: repeat-x;
-    -webkit-animation: header_Roll linear 20s infinite;
+    -webkit-animation: header_Roll linear 24s infinite;
     
 }
 
-
-/* 
 .card-one {
     position: absolute;
     width: 1800px;
@@ -32,12 +30,13 @@ body {
     background-image: url(images/breeze2.png);
     background-repeat: repeat-x;
     transform: rotateX(180deg);
-} */
+}
 
 .card-two {
     position: absolute;
     width: 1800px;
     height: 151px;
+    left: 30px;
     backface-visibility: visible;
     background-image: url(images/breeze2.png);
     background-size: 930px 200px;
@@ -47,26 +46,26 @@ body {
     
 }
 
-/* .card-three {
+.card-three {
     position: absolute;
     width: 1800px;
     height: 151px;
+    left: 60px;
     backface-visibility: visible;
     background-image: url(images/breeze2.png);
     background-size: 960px 100px;
     background-repeat: repeat-x;
     transform: rotateX(110deg);
-} */
+}
 
-
-/*Translate*/
+/*linear-Smoke (Translate)*/
 @-webkit-keyframes header_Roll {
     from { right: 0px; }
     to { right: 900px; }
 }
-/*rotate*/
+/*linear-Smoke (Rotate)*/
     .card-one {
-        -webkit-animation: rotation 14s infinite linear;
+        -webkit-animation: rotation 16s infinite linear;
     }
     @-webkit-keyframes rotation {
         from {-webkit-transform: rotateX(179deg); 
